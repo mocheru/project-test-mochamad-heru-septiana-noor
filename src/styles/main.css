@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+body {
+  font-size: 12px;
+  color: #424242;
+}
+
+.nav {
+  background: #f46c34;
+  width: 100%;
+  display: flex;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 10vh;
+}
+.nav_list {
+  width: 80%;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+.logo {
+  width: 20%;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 24px;
+}
+
+.logo a {
+  display: flex;
+  align-items: left;
+}
+
+.nav_items {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: right;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.nav a {
+  display: inline-block;
+  padding: 1.3em;
+  text-decoration: none;
+  color: white !important;
+}
+.nav a:hover {
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px; /* Jarak antar menu */
+}
+
+nav a {
+  text-decoration: none;
+  color: #333; /* Warna teks normal */
+  position: relative;
+}
+
+nav a:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 7px; /* Ketebalan garis bawah */
+  background: #ffffff; /* Warna garis bawah saat aktif */
+  position: absolute;
+  bottom: 0px; /* Jarak antara teks dan garis bawah */
+  transition: width 0.3s; /* Efek transisi panjang garis bawah */
+}
+
+nav a:hover:after,
+nav a:focus:after,
+nav a:active:after,
+nav a:target:after {
+  width: 70%; /* Panjang garis bawah saat dihover atau aktif */
+}
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 380px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  background-position: center;
+  background-color: Black !important;
+}
+
+.hero:before {
+ content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 10;
+  border-left: 1590px solid transparent; /* Lebar segitiga siku */
+  border-bottom: 150px solid #ffffff; /* Tinggi segitiga siku dan warna latar belakang */
+  transform: translateY(-278px); /* Pindahkan ke bawah sejauh tinggi segitiga */
+}
+
+.hero_inner {
+  margin: 0 auto;
+  max-width: 800px;
+}
+.hero_title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 36px;
+  text-shadow: 1px 1px #141414;
+}
+.hero_subtitle {
+  color: #fff;
+  margin-top: 2px;
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: 1px 1px #141414;
+}
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+.content {
+  padding: 32px;
+  background-color: #ffffff;
+}
+
+.showing {
+  font-size: small;
+  text-align: left;
+}
+
+.sort {
+  font-size: small;
+  text-align: right;
+}
+.latest {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.latest h2 {
+  font-weight: 900;
+  min-height: 44px;
+  min-width: 44px;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.latest h3 {
+  font-weight: 700;
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+.list {
+  margin: 32px auto auto;
+  text-align: left;
+  display: grid;
+  grid-row-gap: 16px;
+  background-color: #ffffff;
+}
+.list_item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.list_item_content {
+  padding: 16px;
+}
+.list_item_thumb {
+  width: 100%;
+  max-height: 200px;
+}
+.list_item_title {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: 0.3s opacity;
+}
+.list_item_title:hover {
+  opacity: 0.5;
+}
+.list_item_title a {
+  text-decoration: none;
+  color: inherit;
+  padding: 1.3em;
+}
+.list_item_desc {
+  margin-top: -30px;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+footer {
+  background:#f46c34;
+  color: white;
+  font-size: 14px;
+  padding: 2em;
+  width: 100%;
+  text-align: center;
+}
+.skip_link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  z-index: 100;
+  text-decoration: none;
+}
+.skip_link:focus {
+  top: 100px;
+}
